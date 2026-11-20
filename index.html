@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align:center;font-family:fantasy;font-size:40px;position:relative;top:0%;left:47%;transform:translate(-50%,-50%);transition:all 0.3s ease-in-out">CHAT</h1>
+    <div id="messages"></div>
+    <div id="typing-indicator"></div>
+    <section id="sendMsg-section">
+        <button id="sendBtn-msg">Send</button>
+        <textarea type="text" id="sendInput-msg" placeholder="Send a message!"></textarea>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabaseFunctions.js"></script>
+    <script src="script.js"></script>
+    <script src="improvements.js"></script>
+</body>
+</html>
