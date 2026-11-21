@@ -61,14 +61,19 @@ html, body {
     box-shadow: rgba(21, 15, 109, 0.808) 0px -1px 5px 3px;
 }
 #msgBox {
-    width:95%;
-    text-align:center;
-    background-image:linear-gradient(270deg,#ddd5d5,#f7f7f7);
-    border-radius: 12px;
-    margin:10px;
+    width: 95%;
+    text-align: center;
+    background-image: linear-gradient(270deg, #ddd5d5, #f7f7f7);
+    border-radius: 12px 2px 2px 12px;
+    margin: 10px;
     box-shadow: rgba(42, 96, 20, 0.815) 0px 0px 4px 1px;
-    height:40px;
-} 
+    min-height: 40px;
+    height: auto;
+    flex-shrink: 0;
+    overflow-wrap: anywhere;
+    padding: 8px;
+    overflow-y:auto;
+}
 #messages {
     width: 100%;
     height: 77vh;
@@ -88,3 +93,43 @@ html, body {
     height: auto;
     overflow-wrap: anywhere;
 }
+#msgAniSend {
+    height:55px;
+    width:85%;
+    bottom:2%;
+    left:45%;
+    transform: translate(-50%,-50%);
+    position:fixed;;
+    resize: none;
+    box-shadow: rgba(4, 2, 2, 0.815) 0px 0px 4px 4px;
+    border-radius: 13px;
+    z-index: 1;
+    background-image:linear-gradient(45deg,#b7b7b7,#ebebeb);
+    transition: all 0.3s ease-in-out;
+    outline:none;
+    border:none;
+    display:none;
+    z-index:1;
+    /*animation so when u write it goes to rigth and when others write it goes left*/
+}
+/*  i used ai to server so i had to put "AI-assisted materials" -_- and if i remix it its still ai,s code
+        © 2026 @web-super-coder. All Rights Reserved.
+
+        This website contains original content created by
+        @web-super-coder, as well as certain AI-assisted
+        materials.
+
+        Original content is protected by applicable
+        copyright laws. Third-party materials remain
+        subject to their respective licenses and rights.
+      
+        version 1.0.0 beta*/
+        #clickCopyright {
+            background-color:yellow;
+            border:solid black 2px;
+            border-radius:3px;
+            position:absolute;
+            top:4%;
+            left:8%;
+            transform: translate(-50%,-50%);
+        }
