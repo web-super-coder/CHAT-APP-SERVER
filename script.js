@@ -19,7 +19,7 @@ msgTSendBTN.addEventListener("click", function() {
 })
 let CopyrightBtn = document.getElementById("clickCopyright");
 CopyrightBtn.addEventListener("click", function() {
-    location.assign("/COPYRIGHT")
+    location.assign("CHAT-APP-SERVER//COPYRIGHT")
 })
 Object.assign(window, {
     startUser,
